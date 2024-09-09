@@ -58,6 +58,11 @@ nav ul li a:hover {
     color: #4CAF50;
 }
 
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Section Styles */
 section {
     padding: 20px 0;
@@ -75,18 +80,52 @@ section ul {
     padding-left: 20px;
 }
 
-/* Footer Styles */
-footer {
+/* Hidden element */
+.hidden {
+    display: none;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Back to top button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 20px 0;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-footer h2 {
-    font-size: 1.5em;
-}
-
-footer p {
-    margin: 5px 0;
+#back-to-top:hover {
+    background-color: #4CAF50;
 }
