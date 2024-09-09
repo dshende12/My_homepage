@@ -17,10 +17,10 @@
 
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+               <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
 
@@ -40,6 +40,8 @@
 
         <section id="projects">
             <h2>Projects</h2>
+             <button id="toggle-projects">Show/Hide Projects</button> <!-- Toggle button -->
+            <ul id="project-list" class="hidden"> <!-- Initially hidden -->
             <p>Here are some of the projects I've been working on. Stay tuned for more updates!</p>
             <ul>
                
@@ -49,11 +51,26 @@
             </ul>
         </section>
 
-        <footer>
+        
+         
+     <footer id="contact">
+            <h2>Contact</h2>
             <h2>Contact</h2>
             <p>Email: dhirajkumar.s@iigm.res.in </p>
             <p>Phone: 7038624900</p>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Submit</button>
+                <p id="form-message" class="hidden"></p> <!-- Message after form submission -->
+            </form>
         </footer>
     </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="hidden">Top</button>
 </body>
 </html>
+
